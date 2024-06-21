@@ -3,18 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9702A5162C3CD6B4006E905B /* Smart_Mat_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9702A5152C3CD6B4006E905B /* Smart_Mat_AppApp.swift */; };
+		9702A5162C3CD6B4006E905B /* Smart_Mat_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9702A5152C3CD6B4006E905B /* Smart_Mat_App.swift */; };
 		9702A5182C3CD6B4006E905B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9702A5172C3CD6B4006E905B /* ContentView.swift */; };
 		9702A51A2C3CD6B4006E905B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9702A5192C3CD6B4006E905B /* Item.swift */; };
 		9702A51C2C3CD6B6006E905B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9702A51B2C3CD6B6006E905B /* Assets.xcassets */; };
 		9702A51F2C3CD6B6006E905B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9702A51E2C3CD6B6006E905B /* Preview Assets.xcassets */; };
-		9702A5292C3CD6B6006E905B /* Smart_Mat_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9702A5282C3CD6B6006E905B /* Smart_Mat_AppTests.swift */; };
-		9702A5332C3CD6B6006E905B /* Smart_Mat_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9702A5322C3CD6B6006E905B /* Smart_Mat_AppUITests.swift */; };
-		9702A5352C3CD6B6006E905B /* Smart_Mat_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9702A5342C3CD6B6006E905B /* Smart_Mat_AppUITestsLaunchTests.swift */; };
+		9702A5292C3CD6B6006E905B /* Smart_Mat_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9702A5282C3CD6B6006E905B /* Smart_Mat_Tests.swift */; };
+		9702A5332C3CD6B6006E905B /* Smart_Mat_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9702A5322C3CD6B6006E905B /* Smart_Mat_UITests.swift */; };
+		9702A5352C3CD6B6006E905B /* Smart_Mat_UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9702A5342C3CD6B6006E905B /* Smart_Mat_UITestsLaunchTests.swift */; };
+		970BE2722C4B4A42006C5E80 /* WorkoutListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970BE26A2C4B4914006C5E80 /* WorkoutListView.swift */; };
+		970BE2752C4B634D006C5E80 /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970BE2742C4B634D006C5E80 /* TrailingIconLabelStyle.swift */; };
+		970BE2772C4BC5C4006C5E80 /* NoEffectButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970BE2762C4BC5C4006C5E80 /* NoEffectButtonStyle.swift */; };
+		970BE2792C4BEA51006C5E80 /* WorkoutDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970BE2782C4BEA51006C5E80 /* WorkoutDisplayView.swift */; };
+		970BE27B2C4CFAB9006C5E80 /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970BE27A2C4CFAB9006C5E80 /* WorkoutManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,17 +41,37 @@
 
 /* Begin PBXFileReference section */
 		9702A5122C3CD6B4006E905B /* Smart Mat App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart Mat App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9702A5152C3CD6B4006E905B /* Smart_Mat_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_Mat_AppApp.swift; sourceTree = "<group>"; };
+		9702A5152C3CD6B4006E905B /* Smart_Mat_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_Mat_App.swift; sourceTree = "<group>"; };
 		9702A5172C3CD6B4006E905B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9702A5192C3CD6B4006E905B /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		9702A51B2C3CD6B6006E905B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9702A51E2C3CD6B6006E905B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9702A5242C3CD6B6006E905B /* Smart Mat AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smart Mat AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9702A5282C3CD6B6006E905B /* Smart_Mat_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_Mat_AppTests.swift; sourceTree = "<group>"; };
+		9702A5282C3CD6B6006E905B /* Smart_Mat_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_Mat_Tests.swift; sourceTree = "<group>"; };
 		9702A52E2C3CD6B6006E905B /* Smart Mat AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smart Mat AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9702A5322C3CD6B6006E905B /* Smart_Mat_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_Mat_AppUITests.swift; sourceTree = "<group>"; };
-		9702A5342C3CD6B6006E905B /* Smart_Mat_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_Mat_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9702A5322C3CD6B6006E905B /* Smart_Mat_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_Mat_UITests.swift; sourceTree = "<group>"; };
+		9702A5342C3CD6B6006E905B /* Smart_Mat_UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_Mat_UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		970BE26A2C4B4914006C5E80 /* WorkoutListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListView.swift; sourceTree = "<group>"; };
+		970BE2742C4B634D006C5E80 /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
+		970BE2762C4BC5C4006C5E80 /* NoEffectButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoEffectButtonStyle.swift; sourceTree = "<group>"; };
+		970BE2782C4BEA51006C5E80 /* WorkoutDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDisplayView.swift; sourceTree = "<group>"; };
+		970BE27A2C4CFAB9006C5E80 /* WorkoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		970BE2712C4B4A3C006C5E80 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Theme.swift,
+				Workout.swift,
+			);
+			target = 9702A5112C3CD6B4006E905B /* Smart Mat App */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		970BE2612C4B3944006C5E80 /* Models */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (970BE2712C4B4A3C006C5E80 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Models; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9702A50F2C3CD6B4006E905B /* Frameworks */ = {
@@ -77,8 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				9702A5142C3CD6B4006E905B /* Smart Mat App */,
-				9702A5272C3CD6B6006E905B /* Smart Mat AppTests */,
-				9702A5312C3CD6B6006E905B /* Smart Mat AppUITests */,
+				9702A5272C3CD6B6006E905B /* Smart Mat Tests */,
+				9702A5312C3CD6B6006E905B /* Smart Mat UITests */,
 				9702A5132C3CD6B4006E905B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,11 +121,17 @@
 		9702A5142C3CD6B4006E905B /* Smart Mat App */ = {
 			isa = PBXGroup;
 			children = (
-				9702A5152C3CD6B4006E905B /* Smart_Mat_AppApp.swift */,
+				970BE26A2C4B4914006C5E80 /* WorkoutListView.swift */,
+				970BE2612C4B3944006C5E80 /* Models */,
+				9702A5152C3CD6B4006E905B /* Smart_Mat_App.swift */,
 				9702A5172C3CD6B4006E905B /* ContentView.swift */,
 				9702A5192C3CD6B4006E905B /* Item.swift */,
 				9702A51B2C3CD6B6006E905B /* Assets.xcassets */,
 				9702A51D2C3CD6B6006E905B /* Preview Content */,
+				970BE2742C4B634D006C5E80 /* TrailingIconLabelStyle.swift */,
+				970BE2762C4BC5C4006C5E80 /* NoEffectButtonStyle.swift */,
+				970BE2782C4BEA51006C5E80 /* WorkoutDisplayView.swift */,
+				970BE27A2C4CFAB9006C5E80 /* WorkoutManager.swift */,
 			);
 			path = "Smart Mat App";
 			sourceTree = "<group>";
@@ -113,21 +144,21 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		9702A5272C3CD6B6006E905B /* Smart Mat AppTests */ = {
+		9702A5272C3CD6B6006E905B /* Smart Mat Tests */ = {
 			isa = PBXGroup;
 			children = (
-				9702A5282C3CD6B6006E905B /* Smart_Mat_AppTests.swift */,
+				9702A5282C3CD6B6006E905B /* Smart_Mat_Tests.swift */,
 			);
-			path = "Smart Mat AppTests";
+			path = "Smart Mat Tests";
 			sourceTree = "<group>";
 		};
-		9702A5312C3CD6B6006E905B /* Smart Mat AppUITests */ = {
+		9702A5312C3CD6B6006E905B /* Smart Mat UITests */ = {
 			isa = PBXGroup;
 			children = (
-				9702A5322C3CD6B6006E905B /* Smart_Mat_AppUITests.swift */,
-				9702A5342C3CD6B6006E905B /* Smart_Mat_AppUITestsLaunchTests.swift */,
+				9702A5322C3CD6B6006E905B /* Smart_Mat_UITests.swift */,
+				9702A5342C3CD6B6006E905B /* Smart_Mat_UITestsLaunchTests.swift */,
 			);
-			path = "Smart Mat AppUITests";
+			path = "Smart Mat UITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,9 +291,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				970BE2772C4BC5C4006C5E80 /* NoEffectButtonStyle.swift in Sources */,
 				9702A5182C3CD6B4006E905B /* ContentView.swift in Sources */,
 				9702A51A2C3CD6B4006E905B /* Item.swift in Sources */,
-				9702A5162C3CD6B4006E905B /* Smart_Mat_AppApp.swift in Sources */,
+				970BE2792C4BEA51006C5E80 /* WorkoutDisplayView.swift in Sources */,
+				970BE2722C4B4A42006C5E80 /* WorkoutListView.swift in Sources */,
+				970BE27B2C4CFAB9006C5E80 /* WorkoutManager.swift in Sources */,
+				9702A5162C3CD6B4006E905B /* Smart_Mat_App.swift in Sources */,
+				970BE2752C4B634D006C5E80 /* TrailingIconLabelStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9702A5292C3CD6B6006E905B /* Smart_Mat_AppTests.swift in Sources */,
+				9702A5292C3CD6B6006E905B /* Smart_Mat_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,8 +314,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9702A5332C3CD6B6006E905B /* Smart_Mat_AppUITests.swift in Sources */,
-				9702A5352C3CD6B6006E905B /* Smart_Mat_AppUITestsLaunchTests.swift in Sources */,
+				9702A5332C3CD6B6006E905B /* Smart_Mat_UITests.swift in Sources */,
+				9702A5352C3CD6B6006E905B /* Smart_Mat_UITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
