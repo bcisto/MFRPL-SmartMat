@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9702A5162C3CD6B4006E905B /* Smart_Mat_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9702A5152C3CD6B4006E905B /* Smart_Mat_AppApp.swift */; };
+		9702A5182C3CD6B4006E905B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9702A5172C3CD6B4006E905B /* ContentView.swift */; };
+		9702A51A2C3CD6B4006E905B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9702A5192C3CD6B4006E905B /* Item.swift */; };
+		9702A51C2C3CD6B6006E905B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9702A51B2C3CD6B6006E905B /* Assets.xcassets */; };
+		9702A51F2C3CD6B6006E905B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9702A51E2C3CD6B6006E905B /* Preview Assets.xcassets */; };
+		9702A5292C3CD6B6006E905B /* Smart_Mat_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9702A5282C3CD6B6006E905B /* Smart_Mat_AppTests.swift */; };
+		9702A5332C3CD6B6006E905B /* Smart_Mat_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9702A5322C3CD6B6006E905B /* Smart_Mat_AppUITests.swift */; };
+		9702A5352C3CD6B6006E905B /* Smart_Mat_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9702A5342C3CD6B6006E905B /* Smart_Mat_AppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9702A5252C3CD6B6006E905B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9702A50A2C3CD6B4006E905B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9702A5112C3CD6B4006E905B;
+			remoteInfo = "Smart Mat App";
+		};
+		9702A52F2C3CD6B6006E905B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9702A50A2C3CD6B4006E905B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9702A5112C3CD6B4006E905B;
+			remoteInfo = "Smart Mat App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9702A5122C3CD6B4006E905B /* Smart Mat App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart Mat App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9702A5152C3CD6B4006E905B /* Smart_Mat_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_Mat_AppApp.swift; sourceTree = "<group>"; };
+		9702A5172C3CD6B4006E905B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9702A5192C3CD6B4006E905B /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		9702A51B2C3CD6B6006E905B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9702A51E2C3CD6B6006E905B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9702A5242C3CD6B6006E905B /* Smart Mat AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smart Mat AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9702A5282C3CD6B6006E905B /* Smart_Mat_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_Mat_AppTests.swift; sourceTree = "<group>"; };
+		9702A52E2C3CD6B6006E905B /* Smart Mat AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smart Mat AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9702A5322C3CD6B6006E905B /* Smart_Mat_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_Mat_AppUITests.swift; sourceTree = "<group>"; };
+		9702A5342C3CD6B6006E905B /* Smart_Mat_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_Mat_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9702A50F2C3CD6B4006E905B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9702A5212C3CD6B6006E905B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9702A52B2C3CD6B6006E905B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9702A5092C3CD6B4006E905B = {
+			isa = PBXGroup;
+			children = (
+				9702A5142C3CD6B4006E905B /* Smart Mat App */,
+				9702A5272C3CD6B6006E905B /* Smart Mat AppTests */,
+				9702A5312C3CD6B6006E905B /* Smart Mat AppUITests */,
+				9702A5132C3CD6B4006E905B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9702A5132C3CD6B4006E905B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9702A5122C3CD6B4006E905B /* Smart Mat App.app */,
+				9702A5242C3CD6B6006E905B /* Smart Mat AppTests.xctest */,
+				9702A52E2C3CD6B6006E905B /* Smart Mat AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9702A5142C3CD6B4006E905B /* Smart Mat App */ = {
+			isa = PBXGroup;
+			children = (
+				9702A5152C3CD6B4006E905B /* Smart_Mat_AppApp.swift */,
+				9702A5172C3CD6B4006E905B /* ContentView.swift */,
+				9702A5192C3CD6B4006E905B /* Item.swift */,
+				9702A51B2C3CD6B6006E905B /* Assets.xcassets */,
+				9702A51D2C3CD6B6006E905B /* Preview Content */,
+			);
+			path = "Smart Mat App";
+			sourceTree = "<group>";
+		};
+		9702A51D2C3CD6B6006E905B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9702A51E2C3CD6B6006E905B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9702A5272C3CD6B6006E905B /* Smart Mat AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				9702A5282C3CD6B6006E905B /* Smart_Mat_AppTests.swift */,
+			);
+			path = "Smart Mat AppTests";
+			sourceTree = "<group>";
+		};
+		9702A5312C3CD6B6006E905B /* Smart Mat AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9702A5322C3CD6B6006E905B /* Smart_Mat_AppUITests.swift */,
+				9702A5342C3CD6B6006E905B /* Smart_Mat_AppUITestsLaunchTests.swift */,
+			);
+			path = "Smart Mat AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9702A5112C3CD6B4006E905B /* Smart Mat App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9702A5382C3CD6B6006E905B /* Build configuration list for PBXNativeTarget "Smart Mat App" */;
+			buildPhases = (
+				9702A50E2C3CD6B4006E905B /* Sources */,
+				9702A50F2C3CD6B4006E905B /* Frameworks */,
+				9702A5102C3CD6B4006E905B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Smart Mat App";
+			productName = "Smart Mat App";
+			productReference = 9702A5122C3CD6B4006E905B /* Smart Mat App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9702A5232C3CD6B6006E905B /* Smart Mat AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9702A53B2C3CD6B6006E905B /* Build configuration list for PBXNativeTarget "Smart Mat AppTests" */;
+			buildPhases = (
+				9702A5202C3CD6B6006E905B /* Sources */,
+				9702A5212C3CD6B6006E905B /* Frameworks */,
+				9702A5222C3CD6B6006E905B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9702A5262C3CD6B6006E905B /* PBXTargetDependency */,
+			);
+			name = "Smart Mat AppTests";
+			productName = "Smart Mat AppTests";
+			productReference = 9702A5242C3CD6B6006E905B /* Smart Mat AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9702A52D2C3CD6B6006E905B /* Smart Mat AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9702A53E2C3CD6B6006E905B /* Build configuration list for PBXNativeTarget "Smart Mat AppUITests" */;
+			buildPhases = (
+				9702A52A2C3CD6B6006E905B /* Sources */,
+				9702A52B2C3CD6B6006E905B /* Frameworks */,
+				9702A52C2C3CD6B6006E905B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9702A5302C3CD6B6006E905B /* PBXTargetDependency */,
+			);
+			name = "Smart Mat AppUITests";
+			productName = "Smart Mat AppUITests";
+			productReference = 9702A52E2C3CD6B6006E905B /* Smart Mat AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9702A50A2C3CD6B4006E905B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					9702A5112C3CD6B4006E905B = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					9702A5232C3CD6B6006E905B = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 9702A5112C3CD6B4006E905B;
+					};
+					9702A52D2C3CD6B6006E905B = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 9702A5112C3CD6B4006E905B;
+					};
+				};
+			};
+			buildConfigurationList = 9702A50D2C3CD6B4006E905B /* Build configuration list for PBXProject "Smart Mat App" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9702A5092C3CD6B4006E905B;
+			productRefGroup = 9702A5132C3CD6B4006E905B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9702A5112C3CD6B4006E905B /* Smart Mat App */,
+				9702A5232C3CD6B6006E905B /* Smart Mat AppTests */,
+				9702A52D2C3CD6B6006E905B /* Smart Mat AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9702A5102C3CD6B4006E905B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9702A51F2C3CD6B6006E905B /* Preview Assets.xcassets in Resources */,
+				9702A51C2C3CD6B6006E905B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9702A5222C3CD6B6006E905B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9702A52C2C3CD6B6006E905B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9702A50E2C3CD6B4006E905B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9702A5182C3CD6B4006E905B /* ContentView.swift in Sources */,
+				9702A51A2C3CD6B4006E905B /* Item.swift in Sources */,
+				9702A5162C3CD6B4006E905B /* Smart_Mat_AppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9702A5202C3CD6B6006E905B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9702A5292C3CD6B6006E905B /* Smart_Mat_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9702A52A2C3CD6B6006E905B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9702A5332C3CD6B6006E905B /* Smart_Mat_AppUITests.swift in Sources */,
+				9702A5352C3CD6B6006E905B /* Smart_Mat_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9702A5262C3CD6B6006E905B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9702A5112C3CD6B4006E905B /* Smart Mat App */;
+			targetProxy = 9702A5252C3CD6B6006E905B /* PBXContainerItemProxy */;
+		};
+		9702A5302C3CD6B6006E905B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9702A5112C3CD6B4006E905B /* Smart Mat App */;
+			targetProxy = 9702A52F2C3CD6B6006E905B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9702A5362C3CD6B6006E905B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9702A5372C3CD6B6006E905B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9702A5392C3CD6B6006E905B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Smart Mat App/Preview Content\"";
+				DEVELOPMENT_TEAM = VXU7XP6WX7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "MFPRL.Smart-Mat-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9702A53A2C3CD6B6006E905B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Smart Mat App/Preview Content\"";
+				DEVELOPMENT_TEAM = VXU7XP6WX7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "MFPRL.Smart-Mat-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9702A53C2C3CD6B6006E905B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VXU7XP6WX7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "MFPRL.Smart-Mat-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smart Mat App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Smart Mat App";
+			};
+			name = Debug;
+		};
+		9702A53D2C3CD6B6006E905B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VXU7XP6WX7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "MFPRL.Smart-Mat-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smart Mat App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Smart Mat App";
+			};
+			name = Release;
+		};
+		9702A53F2C3CD6B6006E905B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VXU7XP6WX7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "MFPRL.Smart-Mat-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Smart Mat App";
+			};
+			name = Debug;
+		};
+		9702A5402C3CD6B6006E905B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VXU7XP6WX7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "MFPRL.Smart-Mat-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Smart Mat App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9702A50D2C3CD6B4006E905B /* Build configuration list for PBXProject "Smart Mat App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9702A5362C3CD6B6006E905B /* Debug */,
+				9702A5372C3CD6B6006E905B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9702A5382C3CD6B6006E905B /* Build configuration list for PBXNativeTarget "Smart Mat App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9702A5392C3CD6B6006E905B /* Debug */,
+				9702A53A2C3CD6B6006E905B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9702A53B2C3CD6B6006E905B /* Build configuration list for PBXNativeTarget "Smart Mat AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9702A53C2C3CD6B6006E905B /* Debug */,
+				9702A53D2C3CD6B6006E905B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9702A53E2C3CD6B6006E905B /* Build configuration list for PBXNativeTarget "Smart Mat AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9702A53F2C3CD6B6006E905B /* Debug */,
+				9702A5402C3CD6B6006E905B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9702A50A2C3CD6B4006E905B /* Project object */;
+}
