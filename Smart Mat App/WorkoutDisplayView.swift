@@ -127,6 +127,16 @@ struct WorkoutDisplayView: View {
         .background(manager.workout.theme.mainColor)
         .onDisappear(perform: onDismiss)
     }
+    
+    func onDismiss() {
+        if manager.buttonText == "End" {
+            presentationMode.wrappedValue.dismiss()
+            manager.reset()
+        } else {
+            manager.resetMatColors()
+            manager.reduceStep()
+        }
+    }
 }
 
 struct WorkoutDisplayView_Previews: PreviewProvider {
