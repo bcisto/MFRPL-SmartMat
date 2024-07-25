@@ -20,9 +20,13 @@ struct WorkoutCardView: View {
                 .font(.subheadline)
             Spacer()
             HStack {
-                Label("\(workout.assignDate.formatted())", systemImage: "calendar")
+                Label(
+                    "\(workout.assignDate.formatted())", systemImage: "calendar"
+                )
                 Spacer()
-                Label("\(workout.dueDate.formatted())", systemImage: "calendar.circle")
+                Label(
+                    "\(workout.dueDate.formatted())",
+                    systemImage: "calendar.circle")
                 Image(systemName: "clock")
                     .padding(.trailing, 4)
                 Text("\(workout.estimatedTime) secs")
@@ -42,31 +46,38 @@ struct WorkoutListView: View {
     var workouts: [Workout]
 
     var body: some View {
-        NavigationStack {
-            List(workouts) { workout in
-                NavigationLink(destination: WorkoutDisplayView(workout: workout)) {
-                    WorkoutCardView(workout: workout)
-                        .padding([.top, .horizontal])
+        ZStack {
+            Color(red: 0.678, green: 0.847, blue: 0.902)
+                .edgesIgnoringSafeArea(.all)
+                .ignoresSafeArea()
+
+            NavigationStack {
+                List(workouts) { workout in
+                    NavigationLink(
+                        destination: WorkoutDisplayView(workout: workout)
+                    ) {
+                        WorkoutCardView(workout: workout)
+                            .padding([.top, .horizontal])
+                    }
+                    .listRowInsets(EdgeInsets())
+                    .listRowBackground(workout.theme.mainColor)
                 }
-                .listRowBackground(workout.theme.mainColor)
-            }
-            .navigationTitle("Workouts")
-            .toolbar {
-                Button(action: {
-                    refreshWorkouts()
-                }) {
-                    Image(systemName: "arrow.clockwise")
+                .navigationTitle("Workouts")
+                .toolbar {
+                    Button(action: {
+                        refreshWorkouts()
+                    }) {
+                        Image(systemName: "arrow.clockwise")
+                    }
+                    .accessibilityLabel("Reload Workouts")
                 }
-                .accessibilityLabel("Reload Workouts")
             }
         }
     }
-    
     func refreshWorkouts() {
         //TODO: implement get request off server
     }
 }
-
 
 struct WorkoutListView_Previews: PreviewProvider {
     @State static var workouts: [Workout] = Workout.workouts

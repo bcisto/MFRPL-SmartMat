@@ -54,7 +54,8 @@ extension Workout {
                 ],
                 assignDate: Date(),
                 dueDate: Date(),
-                theme: .orange),
+                theme: .pebble),
+
             Workout(
                 title: "Slow Waltz",
                 description:
@@ -64,7 +65,7 @@ extension Workout {
                 programWaitTime: [4000, 4200, 4300, 4400, 4500],
                 assignDate: Date(),
                 dueDate: Date(),
-                theme: .yellow),
+                theme: .sand),
 
             Workout(
                 title: "Ballroom Shuffle",
@@ -75,7 +76,7 @@ extension Workout {
                 programWaitTime: [3500, 3700, 3900, 4100, 4300],
                 assignDate: Date(),
                 dueDate: Date(),
-                theme: .indigo),
+                theme: .ash),
 
             Workout(
                 title: "Gentle Rumba",
@@ -86,7 +87,8 @@ extension Workout {
                 programWaitTime: [3000, 3200, 3400, 3600, 3800],
                 assignDate: Date(),
                 dueDate: Date(),
-                theme: .poppy),
+                theme: .linen),
+
             Workout(
                 title: "Relaxed Salsa",
                 description:
@@ -96,7 +98,7 @@ extension Workout {
                 programWaitTime: [3200, 3400, 3600, 3800, 4000],
                 assignDate: Date(),
                 dueDate: Date(),
-                theme: .tan),
+                theme: .driftwood),
 
             Workout(
                 title: "Easygoing Tango",
@@ -107,7 +109,7 @@ extension Workout {
                 programWaitTime: [3100, 3300, 3500, 3700, 3900],
                 assignDate: Date(),
                 dueDate: Date(),
-                theme: .bubblegum),
+                theme: .ivory),
 
             Workout(
                 title: "Slow Foxtrot",
@@ -118,6 +120,6 @@ extension Workout {
                 programWaitTime: [3400, 3600, 3800, 4000],
                 assignDate: Date(),
                 dueDate: Date(),
-                theme: .lavender),
+                theme: .mist)
         ]
 }
