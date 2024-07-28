@@ -20,14 +20,15 @@ struct WorkoutCardView: View {
                 .font(.subheadline)
             Spacer()
             HStack {
-                Label(
-                    "\(workout.assignDate.formatted())", systemImage: "calendar"
-                )
+                Image(systemName: "calendar")
+                    .foregroundColor(.blue)
+                Text("\(workout.assignDate.formatted())")
                 Spacer()
-                Label(
-                    "\(workout.dueDate.formatted())",
-                    systemImage: "calendar.circle")
+                Image(systemName: "calendar.circle")
+                    .foregroundColor(.blue)
+                Text("\(workout.dueDate.formatted())")
                 Image(systemName: "clock")
+                    .foregroundColor(.blue)
                     .padding(.trailing, 4)
                 Text("\(workout.estimatedTime) secs")
             }
@@ -37,6 +38,7 @@ struct WorkoutCardView: View {
             Spacer()
         }
         .padding()
+        .background(workout.theme.mainColor)
         .cornerRadius(40)
         .shadow(radius: 5)
     }
@@ -45,37 +47,76 @@ struct WorkoutCardView: View {
 struct WorkoutListView: View {
     var workouts: [Workout]
 
-    var body: some View {
-        ZStack {
-            Color(red: 0.678, green: 0.847, blue: 0.902)
-                .edgesIgnoringSafeArea(.all)
-                .ignoresSafeArea()
+    @State private var showingAlert = false
+    @State private var proceedToDisplay = false
+    @State private var selectedWorkout: Workout?
+    @State private var navigateToWorkoutDetail: Bool? = false
 
-            NavigationStack {
-                List(workouts) { workout in
-                    NavigationLink(
-                        destination: WorkoutDisplayView(workout: workout)
-                    ) {
-                        WorkoutCardView(workout: workout)
-                            .padding([.top, .horizontal])
+    var body: some View {
+        NavigationStack {
+            ZStack {
+                Color(red: 0.9, green: 0.9, blue: 0.9)
+                    .ignoresSafeArea()
+
+                VStack {
+                    List(workouts) { workout in
+                        Button(action: {
+                            selectedWorkout = workout
+                            showingAlert = true
+                        }) {
+                            WorkoutCardView(workout: workout)
+                                .padding([.top, .horizontal])
+                        }
+                        .listRowInsets(EdgeInsets())
+                        .listRowBackground(
+                            Color(red: 0.95, green: 0.95, blue: 0.95)
+                        )
+                        .foregroundColor(workout.theme.accentColor)
                     }
-                    .listRowInsets(EdgeInsets())
-                    .listRowBackground(workout.theme.mainColor)
                 }
-                .navigationTitle("Workouts")
-                .toolbar {
-                    Button(action: {
-                        refreshWorkouts()
-                    }) {
-                        Image(systemName: "arrow.clockwise")
+            }
+            .navigationTitle("Workouts")
+            .toolbar {
+                Button(action: {
+                    refreshWorkouts()
+                }) {
+                    Image(systemName: "arrow.clockwise")
+                }
+                .accessibilityLabel("Reload Workouts")
+            }
+            .alert(isPresented: $showingAlert) {
+                Alert(
+                    title: Text("Confirm Selection"),
+                    message: Text(
+                        "Do you want to select \(selectedWorkout?.title ?? "this workout")?"
+                    ),
+                    primaryButton: .default(Text("OK")) {
+                        if let workout = selectedWorkout {
+                            showingAlert=false
+                        }
+                    },
+                    secondaryButton: .cancel {
+                        showingAlert = false
+                        selectedWorkout = nil
                     }
-                    .accessibilityLabel("Reload Workouts")
+                )
+            }
+            .navigationDestination(
+                isPresented: Binding<Bool>(
+                    get: { selectedWorkout != nil },
+                    set: { if !$0 { selectedWorkout = nil } }
+                )
+            ) {
+                if let workout = selectedWorkout {
+                    WorkoutDisplayView(workout: workout)
                 }
             }
         }
+        .ignoresSafeArea()
     }
+
     func refreshWorkouts() {
-        //TODO: implement get request off server
+        // TODO: implement get request off server
     }
 }
 

@@ -22,7 +22,7 @@ enum Theme: String {
     var accentColor: Color {
         switch self {
         case .sand, .pebble, .ash, .mist, .stone, .clay, .earth, .taupe, .cotton, .ivory, .linen, .haze, .driftwood, .mushroom:
-            return  Color("LightBlue")
+            return  .black
         case .slate, .dusk, .smoke:
             return .white
         }
