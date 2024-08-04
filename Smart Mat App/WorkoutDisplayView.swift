@@ -99,6 +99,13 @@ struct WorkoutDisplayView: View {
                         
                         Spacer()
                         
+                        Text(manager.statusText)
+                            .fontWeight(.heavy)
+                            .padding()
+                            .foregroundColor(manager.statusColor)
+                        
+                        Spacer()
+                        
                         Button(action: {
                             Task {
                                 if manager.buttonText == "End" && !manager.isRunning {
@@ -141,6 +148,6 @@ struct WorkoutDisplayView: View {
 
 struct WorkoutDisplayView_Previews: PreviewProvider {
     static var previews: some View {
-        WorkoutDisplayView(workout: Workout.workouts[3])
+        WorkoutDisplayView(workout: Workout.workouts[0])
     }
 }

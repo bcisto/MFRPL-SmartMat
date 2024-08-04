@@ -13,27 +13,48 @@ class WorkoutManager: ObservableObject {
     @Published var gridColors: [Color] = Array(
         repeating: Color.white, count: 40)
     @Published var buttonText: String = "Start"
+    @Published var statusText: String = ""
+    @Published var statusColor: Color = Color.green
     @State var isRunning: Bool = false
-
     var workout: Workout
+    var stepStatus: [Bool]
+
     private var cancellables = Set<AnyCancellable>()
 
     init(workout: Workout) {
         self.workout = workout
+        self.stepStatus = Array(
+            repeating: false, count: workout.programLeft.count)
     }
 
     @MainActor
     func resetMatColors() {
         DispatchQueue.main.async {
-            self.gridColors = Array(repeating: Color.white, count: 40)
+            self.gridColors = Array(
+                repeating: Color.white, count: 40)
+        }
+    }
+
+    @MainActor
+    func setMatToRed() {
+        DispatchQueue.main.async {
+            self.gridColors = Array(
+                repeating: Color.red, count: self.workout.programLeft.count)
         }
     }
 
     @MainActor
     func reset() {
         resetMatColors()
+        resetStepStatus()
         upToStep = -1
         buttonText = "Start"
+    }
+
+    func resetStepStatus() {
+        self.stepStatus = Array(
+            repeating: false, count: workout.programLeft.count)
+        self.statusText=""
     }
 
     @MainActor
@@ -56,8 +77,20 @@ class WorkoutManager: ObservableObject {
             }
             self.resetMatColors()
         }
+        self.resetStepStatus()
         for step in 0...upToStep {
             await displayStep(stepNum: step)
+            self.stepStatus[step] = Int.random(in: 0...5) > 0
+            if !self.stepStatus[step] {
+                resetStepStatus()
+                self.statusText = "Incorrect starting sequence again"
+                self.statusColor = Color.red
+                await runSequence()
+                return
+            } else {
+                self.statusText = "Correct"
+                self.statusColor = Color.green
+            }
         }
     }
 
