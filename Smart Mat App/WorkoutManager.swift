@@ -9,7 +9,7 @@ import Combine
 import SwiftUI
 
 class WorkoutManager: ObservableObject {
-    @Published var upToStep: Int = -1
+    @Published var upToStep: Int = 0
     @Published var gridColors: [Color] = Array(
         repeating: Color.white, count: 40)
     @Published var buttonText: String = "Start"
@@ -24,7 +24,7 @@ class WorkoutManager: ObservableObject {
     init(workout: Workout) {
         self.workout = workout
         self.stepStatus = Array(
-            repeating: false, count: workout.programLeft.count)
+            repeating: false, count: workout.stepCount)
     }
 
     @MainActor
@@ -39,7 +39,7 @@ class WorkoutManager: ObservableObject {
     func setMatToRed() {
         DispatchQueue.main.async {
             self.gridColors = Array(
-                repeating: Color.red, count: self.workout.programLeft.count)
+                repeating: Color.red, count: self.workout.stepCount)
         }
     }
 
@@ -47,22 +47,22 @@ class WorkoutManager: ObservableObject {
     func reset() {
         resetMatColors()
         resetStepStatus()
-        upToStep = -1
+        upToStep = 0
         buttonText = "Start"
     }
 
     func resetStepStatus() {
         self.stepStatus = Array(
-            repeating: false, count: workout.programLeft.count)
-        self.statusText=""
+            repeating: false, count: workout.stepCount)
+        self.statusText = ""
     }
 
     @MainActor
     func runNextSequence() async {
         self.isRunning = true
         if !self.isRunning {
-            self.upToStep += 1
             await runSequence()
+            self.upToStep += 1
         }
         isRunning = false
     }
@@ -70,7 +70,7 @@ class WorkoutManager: ObservableObject {
     @MainActor
     func runSequence() async {
         DispatchQueue.main.async {
-            if self.upToStep == self.workout.programLeft.count - 1 {
+            if self.upToStep == self.workout.stepCount - 1 {
                 self.buttonText = "End"
             } else {
                 self.buttonText = "Continue onto step \(self.upToStep + 2)"
@@ -80,15 +80,18 @@ class WorkoutManager: ObservableObject {
         self.resetStepStatus()
         for step in 0...upToStep {
             await displayStep(stepNum: step)
-            self.stepStatus[step] = Int.random(in: 0...5) > 0
+            self.stepStatus[step] = Bool.random()
             if !self.stepStatus[step] {
                 resetStepStatus()
-                self.statusText = "Incorrect starting sequence again"
+                self.statusText =
+                    "Step " + String(step + 1)
+                    + " incorrect starting sequence again"
                 self.statusColor = Color.red
+                try? await Task.sleep(nanoseconds: 500_000_000)
                 await runSequence()
                 return
             } else {
-                self.statusText = "Correct"
+                self.statusText = "Step " + String(step + 1) + " correct"
                 self.statusColor = Color.green
             }
         }
@@ -96,22 +99,18 @@ class WorkoutManager: ObservableObject {
 
     @MainActor
     func displayStep(stepNum: Int) async {
-        guard stepNum < workout.programLeft.count else { return }
-
+        guard stepNum < workout.stepCount else { return }
+        
         let waitTime = Double(workout.programWaitTime[stepNum]) / 1000
         try? await Task.sleep(nanoseconds: UInt64(waitTime * 1_000_000_000))
-
+        
         if stepNum > 0 {
-            let previousLeft = workout.programLeft[stepNum - 1]
-            let previousRight = workout.programRight[stepNum - 1]
-            gridColors[previousLeft] = .white
-            gridColors[previousRight] = .white
+            let previousStep = workout.programSteps[stepNum - 1]
+            gridColors[previousStep] = .white
         }
-
-        let currentLeft = workout.programLeft[stepNum]
-        let currentRight = workout.programRight[stepNum]
-        gridColors[currentLeft] = .orange
-        gridColors[currentRight] = .indigo
+        
+        let currentStep = workout.programSteps[stepNum]
+        gridColors[currentStep] = (currentStep >= 40) ? .orange : .blue
     }
 
     func setStep(step: Int) {

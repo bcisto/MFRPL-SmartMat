@@ -65,6 +65,7 @@ struct WorkoutDisplayView: View {
                 }) {
                     Label("Restart", systemImage: "arrow.clockwise")
                         .padding()
+                        .font(.system(size: 20))
                         .background(Color.blue)
                         .foregroundColor(.white)
                         .cornerRadius(10)
@@ -91,6 +92,7 @@ struct WorkoutDisplayView: View {
                         }) {
                             Label("Redo", systemImage: "arrow.clockwise")
                                 .padding()
+                                .font(.system(size: 20))
                                 .background(Color.blue)
                                 .foregroundColor(.white)
                                 .cornerRadius(10)
@@ -100,7 +102,8 @@ struct WorkoutDisplayView: View {
                         Spacer()
                         
                         Text(manager.statusText)
-                            .fontWeight(.heavy)
+                            .fontWeight(.bold)
+                            .font(.system(size: 20))
                             .padding()
                             .foregroundColor(manager.statusColor)
                         
@@ -120,6 +123,7 @@ struct WorkoutDisplayView: View {
                         }) {
                             Text(manager.buttonText)
                                 .padding()
+                                .font(.system(size: 20))
                                 .background(Color.blue)
                                 .foregroundColor(.white)
                                 .cornerRadius(10)
@@ -148,6 +152,6 @@ struct WorkoutDisplayView: View {
 
 struct WorkoutDisplayView_Previews: PreviewProvider {
     static var previews: some View {
-        WorkoutDisplayView(workout: Workout.workouts[0])
+        WorkoutDisplayView(workout: Workout.workouts[3])
     }
 }
