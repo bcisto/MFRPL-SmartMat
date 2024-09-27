@@ -2,8 +2,9 @@
 //  GATTServer.swift
 //  Smart Mat App
 //
-//  Created by Brian Cisto on 9/27/24.
+//  Created by Brian Cisto on 9/23/24.
 //
+
 import Foundation
 import CoreBluetooth
 
@@ -71,9 +72,9 @@ class GATTServer: NSObject, CBPeripheralManagerDelegate {
     
     func convertToGrid(sensorData: [Float]) -> [[Float]] {
         var grid = [[Float]]()
-        for row in 0..<4 {
-            let start = row * 9
-            let end = start + 9
+        for row in 0..<9 {
+            let start = row * 4
+            let end = start + 4
             let gridRow = Array(sensorData[start..<end])
             grid.append(gridRow)
         }
@@ -97,12 +98,12 @@ class GATTServer: NSObject, CBPeripheralManagerDelegate {
     }
     
     func convertTo1DIndex(row: Int, col: Int) -> Int {
-        return row * 9 + col
+        return row * 4 + col
     }
     
     func sendExpectedSquare(squareIndex: Int) {
         if let characteristic = pressureCharacteristic {
-            let data = Data([UInt8(squareIndex)]) // Send as single byte
+            let data = Data([UInt8(squareIndex)])
             peripheralManager?.updateValue(data, for: characteristic, onSubscribedCentrals: nil)
         }
     }
